@@ -39,7 +39,5 @@ public class Main01 {
         }catch (Exception e){
             e.printStackTrace();
         }
-
-
     }
 }
