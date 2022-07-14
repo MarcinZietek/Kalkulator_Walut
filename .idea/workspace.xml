@@ -173,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657716014869</updated>
       <workItem from="1657716016878" duration="6225000" />
-      <workItem from="1657766891387" duration="7702000" />
+      <workItem from="1657766891387" duration="8308000" />
     </task>
     <task id="LOCAL-00001" summary="add view &amp; reading file currencyDao">
       <created>1657783040203</created>
@@ -196,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657783681991</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="add view &amp; reading file currencyDao #1">
+      <created>1657784505517</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1657784505517</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
