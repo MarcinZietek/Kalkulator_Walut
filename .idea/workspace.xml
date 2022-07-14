@@ -9,7 +9,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add view &amp; reading file currencyDao #1" />
+    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add view &amp; reading file currencyDao #1">
+      <change afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Main01.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/currency.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/currency.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,6 +30,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -47,7 +59,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/Developer/Documents/PROJEKTY/Kalkulator_Walut",
+    "last_opened_file_path": "C:/Users/Developer/Documents/PROJEKTY/Kalkulator_Walut/src/main/webapp/WEB-INF",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.2"
@@ -55,6 +67,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Developer\Documents\PROJEKTY\Kalkulator_Walut\src\main\webapp\WEB-INF" />
       <recent name="C:\Users\Developer\Documents\PROJEKTY\Kalkulator_Walut" />
       <recent name="C:\Users\Developer\Documents\PROJEKTY\Kalkulator_Walut\src" />
     </key>
@@ -173,7 +186,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657716014869</updated>
       <workItem from="1657716016878" duration="6225000" />
-      <workItem from="1657766891387" duration="8308000" />
+      <workItem from="1657766891387" duration="18536000" />
     </task>
     <task id="LOCAL-00001" summary="add view &amp; reading file currencyDao">
       <created>1657783040203</created>
@@ -203,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657784505517</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add view &amp; reading file currencyDao #1">
+      <created>1657785262059</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1657785262059</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -224,5 +244,76 @@
     <MESSAGE value="add view &amp; reading file currencyDao" />
     <MESSAGE value="add view &amp; reading file currencyDao #1" />
     <option name="LAST_COMMIT_MESSAGE" value="add view &amp; reading file currencyDao #1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>25</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>26</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>29</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java</url>
+          <line>46</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java</url>
+          <line>51</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java</url>
+          <line>49</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java</url>
+          <line>50</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>33</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>34</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="14" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

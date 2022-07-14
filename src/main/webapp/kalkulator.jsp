@@ -2,31 +2,33 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <html>
 <head>
-    <title>Admin's page</title>
+    <title>Rates page</title>
 </head>
 <body>
 <h3>List of values</h3>
 <br>
-<input type="button" value="Add Values"
-       onclick="window.location.href='add-admin-values-form.jsp'; return false;"/>
-</br>
 <hr>
+<form action="/exchangeServlet" method="post">
 <table border="1">
     <tr>
         <th>Currency</th>
         <th>Rate</th>
+        <th>Amount</th>
         <th>Action</th>
     </tr>
     <c:forEach var="tempValue" items="${kalkulatorList}" varStatus="counter">
         <tr>
-            <td>${tempValue.currency}</td>
-            <td>${tempValue.rates}</td>
-<%--            <td>${tempValue.allowance}</td>--%>
-            <td><a href='${pageContext.request.contextPath}/managerEditServlet?id=${counter.index}'>Edit</a></td>
-            <td><a href='${pageContext.request.contextPath}/managerDelServlet?id=${counter.index}'>Delete</a></td>
+            <td><input type="hidden" name="currency" value="${tempValue.currency}">${tempValue.currency}</td>
+
+            <td><input type="hidden" name="rates" value="${tempValue.rates}">${tempValue.rates}</td>
+
+            <td><input type="number" name="amount" placeholder="enter amount"/></td>
+            <td><input type="submit" name="exchange" value="euro"></td>
+            <td><a href='${pageContext.request.contextPath}/exchangeServlet?id=${counter.index}' type="submit" name="exchange" value="euro">Exchange</a></td>
         </tr>
     </c:forEach>
 </table>
+</form>
 <br>
 <a href="/managerListServlet">Back to list page</a>
 <hr>
