@@ -31,7 +31,6 @@ public class KalkulatorDao {
             for (int i = 2; i < nodeList.getLength(); i++){
                 Node node = nodeList.item(i);
                 System.out.println("\nCurrent element : " + node.getNodeName());
-
                 if(node.getNodeType() == Node.ELEMENT_NODE){
                     Element element = (Element) node;
                     String currency = element.getAttribute("currency");

@@ -37,21 +37,6 @@ public class CurrencyListServlet  extends HttpServlet{
         protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
 
-
-            String currency = request.getParameter("currency");
-            float rates = 0;
-            float amount = 0;
-
-
-            String ratesString = request.getParameter("rates");
-            String amountString = request.getParameter("amount");
-
-
-            rates = Float.parseFloat(ratesString);
-            amount = Float.parseFloat(amountString);
-            float euro = amount * rates;
-
-
         }
 }
 
