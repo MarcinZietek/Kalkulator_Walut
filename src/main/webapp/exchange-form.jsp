@@ -26,7 +26,7 @@
         </tr>
         <tr>
             <td><label>Exchange amount</label></td>
-            <td><input type="number" min="1" name="amount" value="${currencyId.amount}"/>${currencyId.amount}</td>
+            <td><input type="number" min="1" name="amount" value="${currencyId.amount}"/></td>
         </tr>
         <tr>
             <td><label></label></td>

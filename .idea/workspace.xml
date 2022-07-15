@@ -9,14 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add calculator counts Euro in chosen currency #5">
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/atos/Dao/KalkulatorDaoTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pl/atos/model/KalkulatorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" afterDir="false" />
+    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add first tests #7">
       <change beforePath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,7 +73,7 @@
       <recent name="pl.atos.model" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.KalkulatorTest.testClassExists">
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.56">
     <configuration name="Main01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main01" />
       <module name="Kalkulator_Walut" />
@@ -265,7 +259,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657716014869</updated>
       <workItem from="1657716016878" duration="6225000" />
-      <workItem from="1657766891387" duration="58989000" />
+      <workItem from="1657766891387" duration="61354000" />
     </task>
     <task id="LOCAL-00001" summary="add view &amp; reading file currencyDao">
       <created>1657783040203</created>
@@ -330,7 +324,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657872451931</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add first tests #6">
+      <created>1657876230757</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1657876230757</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,6 +355,7 @@
     <MESSAGE value="add id is always 0, first row only works #3" />
     <MESSAGE value="add chosen currency exchange amount #4" />
     <MESSAGE value="add calculator counts Euro in chosen currency #5" />
-    <option name="LAST_COMMIT_MESSAGE" value="add calculator counts Euro in chosen currency #5" />
+    <MESSAGE value="add first tests #6" />
+    <option name="LAST_COMMIT_MESSAGE" value="add first tests #6" />
   </component>
 </project>
