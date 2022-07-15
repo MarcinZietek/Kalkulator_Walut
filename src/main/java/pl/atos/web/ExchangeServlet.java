@@ -69,7 +69,8 @@ public class ExchangeServlet extends HttpServlet {
         float euro = amount * rates;
         printWriter.append(currency).append(" - ");
         printWriter.append("rate : ").append(String.valueOf(rates));
-        printWriter.append(" ---> You have got ").append(String.valueOf(euro)).append(" ").append(currency).append("\n");
+        printWriter.append(" ---> You have got ").append(String.valueOf(euro)).append(" ").append(currency);
+        printWriter.write("\n");
         printWriter.append("<a href=\"currencyListServlet" + "\">Back to list page</a>");
     }
 

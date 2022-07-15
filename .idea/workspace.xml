@@ -9,9 +9,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add chosen currency exchange amount #4">
+    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add calculator counts Euro in chosen currency #5">
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/atos/Dao/KalkulatorDaoTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/pl/atos/model/KalkulatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +28,7 @@
       <list>
         <option value="Class" />
         <option value="Jsp File" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -51,9 +57,11 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "last_opened_file_path": "C:/Users/Developer/Documents/PROJEKTY/Kalkulator_Walut/src/main/webapp/WEB-INF",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.0",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2"
   }
 }]]></component>
@@ -63,11 +71,82 @@
       <recent name="C:\Users\Developer\Documents\PROJEKTY\Kalkulator_Walut" />
       <recent name="C:\Users\Developer\Documents\PROJEKTY\Kalkulator_Walut\src" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="pl.atos.Dao" />
+      <recent name="pl.atos.model" />
+    </key>
   </component>
-  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.56">
+  <component name="RunManager" selected="JUnit.KalkulatorTest.testClassExists">
     <configuration name="Main01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main01" />
       <module name="Kalkulator_Walut" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KalkulatorDaoTest.testClassDaoExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kalkulator_Walut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.atos.Dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.atos.Dao" />
+      <option name="MAIN_CLASS_NAME" value="pl.atos.Dao.KalkulatorDaoTest" />
+      <option name="METHOD_NAME" value="testClassDaoExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KalkulatorTest.givenNonExistingClass_whenUsingForName_thenClassNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kalkulator_Walut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.atos.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.atos.model" />
+      <option name="MAIN_CLASS_NAME" value="pl.atos.model.KalkulatorTest" />
+      <option name="METHOD_NAME" value="givenNonExistingClass_whenUsingForName_thenClassNotFound" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KalkulatorTest.testClassDaoExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kalkulator_Walut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.atos.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.atos.model" />
+      <option name="MAIN_CLASS_NAME" value="pl.atos.model.KalkulatorTest" />
+      <option name="METHOD_NAME" value="testClassDaoExists" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KalkulatorTest.testClassExists" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Kalkulator_Walut" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="pl.atos.model.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="pl.atos.model" />
+      <option name="MAIN_CLASS_NAME" value="pl.atos.model.KalkulatorTest" />
+      <option name="METHOD_NAME" value="testClassExists" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -161,10 +240,18 @@
     </configuration>
     <list>
       <item itemvalue="Application.Main01" />
+      <item itemvalue="JUnit.KalkulatorDaoTest.testClassDaoExists" />
+      <item itemvalue="JUnit.KalkulatorTest.givenNonExistingClass_whenUsingForName_thenClassNotFound" />
+      <item itemvalue="JUnit.KalkulatorTest.testClassDaoExists" />
+      <item itemvalue="JUnit.KalkulatorTest.testClassExists" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.56" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.KalkulatorTest.testClassExists" />
+        <item itemvalue="JUnit.KalkulatorDaoTest.testClassDaoExists" />
+        <item itemvalue="JUnit.KalkulatorTest.testClassDaoExists" />
+        <item itemvalue="JUnit.KalkulatorTest.givenNonExistingClass_whenUsingForName_thenClassNotFound" />
         <item itemvalue="Application.Main01" />
       </list>
     </recent_temporary>
@@ -178,7 +265,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657716014869</updated>
       <workItem from="1657716016878" duration="6225000" />
-      <workItem from="1657766891387" duration="56403000" />
+      <workItem from="1657766891387" duration="58989000" />
     </task>
     <task id="LOCAL-00001" summary="add view &amp; reading file currencyDao">
       <created>1657783040203</created>
@@ -236,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657870866091</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add calculator counts Euro in chosen currency #5">
+      <created>1657872451931</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1657872451931</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,86 +353,7 @@
     <MESSAGE value="add first currency exchange #2" />
     <MESSAGE value="add id is always 0, first row only works #3" />
     <MESSAGE value="add chosen currency exchange amount #4" />
-    <option name="LAST_COMMIT_MESSAGE" value="add chosen currency exchange amount #4" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>37</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="39" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>40</line>
-          <option name="timeStamp" value="41" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>42</line>
-          <option name="timeStamp" value="42" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="44" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>72</line>
-          <option name="timeStamp" value="45" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>71</line>
-          <option name="timeStamp" value="46" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>73</line>
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="50" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>74</line>
-          <option name="timeStamp" value="55" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>70</line>
-          <option name="timeStamp" value="56" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="57" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>75</line>
-          <option name="timeStamp" value="58" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
-          <line>50</line>
-          <properties class="pl.atos.Dao.KalkulatorDao" method="getCurrency">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="add calculator counts Euro in chosen currency #5" />
+    <option name="LAST_COMMIT_MESSAGE" value="add calculator counts Euro in chosen currency #5" />
   </component>
 </project>

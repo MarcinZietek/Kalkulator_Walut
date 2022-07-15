@@ -5,8 +5,7 @@
     <title>Rates page</title>
 </head>
 <body>
-<h3>List of values</h3>
-<br>
+<h3>List of currencies</h3>
 <hr>
 <table border="1">
     <tr>
