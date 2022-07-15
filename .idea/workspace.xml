@@ -9,11 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add first currency exchange #2">
+    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add id is always 0, first row only works #3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/model/Kalkulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/model/Kalkulator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/CurrencyListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" afterDir="false" />
@@ -183,7 +182,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657716014869</updated>
       <workItem from="1657716016878" duration="6225000" />
-      <workItem from="1657766891387" duration="37566000" />
+      <workItem from="1657766891387" duration="54775000" />
     </task>
     <task id="LOCAL-00001" summary="add view &amp; reading file currencyDao">
       <created>1657783040203</created>
@@ -227,7 +226,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657799970251</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add id is always 0, first row only works #3">
+      <created>1657823537716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1657823537716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,30 +254,110 @@
     <MESSAGE value="add view &amp; reading file currencyDao" />
     <MESSAGE value="add view &amp; reading file currencyDao #1" />
     <MESSAGE value="add first currency exchange #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="add first currency exchange #2" />
+    <MESSAGE value="add id is always 0, first row only works #3" />
+    <option name="LAST_COMMIT_MESSAGE" value="add id is always 0, first row only works #3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>31</line>
+          <line>67</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>27</line>
+          <line>62</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>29</line>
+          <line>65</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>28</line>
+          <line>64</line>
           <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>61</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>37</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>41</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>40</line>
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>42</line>
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>72</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>71</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>73</line>
+          <option name="timeStamp" value="48" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>27</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>70</line>
+          <option name="timeStamp" value="56" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
+          <line>38</line>
+          <option name="timeStamp" value="57" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>75</line>
+          <option name="timeStamp" value="58" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java</url>
+          <line>50</line>
+          <properties class="pl.atos.Dao.KalkulatorDao" method="getCurrency">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="43" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

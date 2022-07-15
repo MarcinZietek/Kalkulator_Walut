@@ -8,6 +8,9 @@ public class Kalkulator {
     private float rates;
     private float amount;
 
+    public Kalkulator() {
+    }
+
     public Kalkulator(String currency, float rates) {
         this.currency = currency;
         this.rates = rates;
@@ -17,6 +20,12 @@ public class Kalkulator {
         this.currency = currency;
         this.rates = rates;
         this.amount = amount;
+    }
+
+    public Kalkulator(int id, String currency, float rates) {
+        this.id = id;
+        this.currency = currency;
+        this.rates = rates;
     }
 
     public Kalkulator(int id, String currency, float rates, float amount) {
@@ -58,4 +67,5 @@ public class Kalkulator {
     public void setAmount(float amount) {
         this.amount = amount;
     }
+
 }

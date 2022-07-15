@@ -1,5 +1,6 @@
 package pl.atos.web;
 
+import pl.atos.Dao.KalkulatorDao;
 import pl.atos.model.Kalkulator;
 
 import javax.servlet.*;
@@ -14,8 +15,42 @@ import java.util.List;
 public class ExchangeServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//        getServletContext().getRequestDispatcher("/exchange-form.jsp").forward(request, response);
 
+        String theCommand = request.getParameter("command");
+        if (theCommand == null){
+            theCommand = "List";
+        }
+
+        switch (theCommand){
+            case "List":
+                listCurrency(request, response);
+                break;
+            case "Exchange":
+                exchangeCurrency(request, response);
+                break;
+        }
+        
+        getServletContext().getRequestDispatcher("/exchange-form.jsp").forward(request, response);
+
+    }
+
+    private void exchangeCurrency(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        int currencyId = Integer.parseInt(request.getParameter("currencyId"));
+        Kalkulator theCurrency;
+        KalkulatorDao kalkulatorDao = new KalkulatorDao();
+        theCurrency = kalkulatorDao.getCurrency(currencyId);
+        request.setAttribute("currencyId", theCurrency);
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/exchange-form.jsp");
+        requestDispatcher.forward(request, response);
+    }
+
+    private void listCurrency(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+        KalkulatorDao kalkulatorDao = new KalkulatorDao();
+        List<Kalkulator> kalkulatorList = kalkulatorDao.getValues();
+        request.setAttribute("kalkulatorList", kalkulatorList);
+
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("/kalkulator.jsp");
+                requestDispatcher.forward(request, response);
     }
 
     @Override
@@ -25,17 +60,13 @@ public class ExchangeServlet extends HttpServlet {
         PrintWriter printWriter = response.getWriter();
 
         String currency = request.getParameter("currency");
-        int id = Integer.parseInt(request.getParameter("id"));
         float rates = Float.parseFloat(request.getParameter("rates"));
-        float amount =  Float.parseFloat(request.getParameter("amount"));;
+        float amount =  Float.parseFloat(request.getParameter("amount"));
 
         float euro = amount * rates;
-        printWriter.append(String.valueOf(id)).append(" : ");
         printWriter.append(currency).append(" - ");
         printWriter.append("rate : ").append(String.valueOf(rates));
         printWriter.append(" ---> You have got ").append(String.valueOf(euro)).append(" Euros");
-//        getServletContext().getRequestDispatcher("/exchange-form.jsp").forward(request, response);
-
     }
 
 }

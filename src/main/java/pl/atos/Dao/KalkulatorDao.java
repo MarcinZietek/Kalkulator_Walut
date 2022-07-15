@@ -10,11 +10,10 @@ import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class KalkulatorDao {
-
-    private Kalkulator kalkulator;
 
     public List<Kalkulator> getValues() {
         List<Kalkulator> kalkulatorList = new ArrayList<>();
@@ -30,22 +29,59 @@ public class KalkulatorDao {
 
             for (int i = 2; i < nodeList.getLength(); i++){
                 Node node = nodeList.item(i);
-                System.out.println("\nCurrent element : " + node.getNodeName());
+//                System.out.println("\nCurrent element : " + node.getNodeName());
+                int id = i;
                 if(node.getNodeType() == Node.ELEMENT_NODE){
                     Element element = (Element) node;
                     String currency = element.getAttribute("currency");
-                    System.out.println("Currency : " + currency);
+//                    System.out.println("Currency : " + currency);
                     String rate = element.getAttribute("rate");
                     float rates = Float.parseFloat(rate);
-                    System.out.println("Rate : " + rates);
-
-                    kalkulatorList.add(new Kalkulator(currency, rates));
+//                    System.out.println("Rate : " + rates);
+                    Kalkulator tempKalkulator = new Kalkulator(id, currency, rates);
+                    kalkulatorList.add(tempKalkulator);
                 }
             }
         }catch (Exception e){
             e.printStackTrace();
         }
        return kalkulatorList;
+    }
+
+    public Kalkulator getCurrency(int currencyId){
+        Kalkulator tempKalkulator = null;
+        List<Kalkulator> kalkulatorList = new ArrayList<>();
+//        int currencyId = Integer.parseInt(theCurrencyId);
+
+        try {
+            File inputFile = new File("C:/Users/Developer/Documents/PROJEKTY/Kalkulator_Walut/src/currency.xml");
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.parse(inputFile);
+            document.getDocumentElement().normalize();
+            System.out.println("Root element : " + document.getDocumentElement().getNodeName());
+            NodeList nodeList = document.getElementsByTagName("Cube");
+            System.out.println("-------------------------------------");
+
+            for (int i = 2; i < nodeList.getLength(); i++){
+                Node node = nodeList.item(i);
+//                currencyId = i;
+                if(node.getNodeType() == Node.ELEMENT_NODE){
+                    Element element = (Element) node;
+                    if (i == currencyId) {
+                        String currency = element.getAttribute("currency");
+                        String rate = element.getAttribute("rate");
+                        float rates = Float.parseFloat(rate);
+//                        kalkulatorList.add(tempKalkulator);
+                        tempKalkulator = new Kalkulator(currencyId, currency, rates);
+                    }
+                }
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return tempKalkulator;
     }
 
 }
