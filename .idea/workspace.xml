@@ -9,13 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add id is always 0, first row only works #3">
+    <list default="true" id="c04d01fa-8368-4198-aa62-a408a04db3fa" name="Changes" comment="add chosen currency exchange amount #4">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/Dao/KalkulatorDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/model/Kalkulator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/model/Kalkulator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/exchange-form.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/kalkulator.jsp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +178,7 @@
       <option name="presentableId" value="Default" />
       <updated>1657716014869</updated>
       <workItem from="1657716016878" duration="6225000" />
-      <workItem from="1657766891387" duration="54775000" />
+      <workItem from="1657766891387" duration="56403000" />
     </task>
     <task id="LOCAL-00001" summary="add view &amp; reading file currencyDao">
       <created>1657783040203</created>
@@ -233,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657823537716</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add chosen currency exchange amount #4">
+      <created>1657870866091</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1657870866091</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -255,36 +258,12 @@
     <MESSAGE value="add view &amp; reading file currencyDao #1" />
     <MESSAGE value="add first currency exchange #2" />
     <MESSAGE value="add id is always 0, first row only works #3" />
-    <option name="LAST_COMMIT_MESSAGE" value="add id is always 0, first row only works #3" />
+    <MESSAGE value="add chosen currency exchange amount #4" />
+    <option name="LAST_COMMIT_MESSAGE" value="add chosen currency exchange amount #4" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>62</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>65</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>64</line>
-          <option name="timeStamp" value="31" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
-          <line>61</line>
-          <option name="timeStamp" value="32" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/pl/atos/web/ExchangeServlet.java</url>
           <line>37</line>

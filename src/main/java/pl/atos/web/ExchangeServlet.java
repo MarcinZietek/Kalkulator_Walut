@@ -56,6 +56,9 @@ public class ExchangeServlet extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
+        request.setCharacterEncoding("UTF-8");
+        response.setCharacterEncoding("UTF-8");
+        response.setContentType("text/html");
 
         PrintWriter printWriter = response.getWriter();
 
@@ -66,7 +69,8 @@ public class ExchangeServlet extends HttpServlet {
         float euro = amount * rates;
         printWriter.append(currency).append(" - ");
         printWriter.append("rate : ").append(String.valueOf(rates));
-        printWriter.append(" ---> You have got ").append(String.valueOf(euro)).append(" Euros");
+        printWriter.append(" ---> You have got ").append(String.valueOf(euro)).append(" ").append(currency).append("\n");
+        printWriter.append("<a href=\"currencyListServlet" + "\">Back to list page</a>");
     }
 
 }

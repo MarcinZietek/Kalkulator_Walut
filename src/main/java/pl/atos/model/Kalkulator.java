@@ -1,8 +1,6 @@
 package pl.atos.model;
 
 public class Kalkulator {
-
-    private static int nextId = 0;
     private int id;
     private String currency;
     private float rates;
@@ -29,8 +27,7 @@ public class Kalkulator {
     }
 
     public Kalkulator(int id, String currency, float rates, float amount) {
-        this.id = nextId;
-        nextId++;
+        this.id = id;
         this.currency = currency;
         this.rates = rates;
         this.amount = amount;

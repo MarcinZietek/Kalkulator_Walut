@@ -16,24 +16,22 @@
 <form action="/exchangeServlet" method="post">
     <table>
         <tbody>
-<%--        <c:forEach var="tempValue" items="${kalkulatorList}">--%>
-            <tr>
-                <td><label>Currency</label></td>
-                <td><input type="hidden" name="currency" value="${currencyId.currency}"/>${currencyId.currency}</td>
-            </tr>
-            <tr>
-                <td><label>Rates</label></td>
-                <td><input type="hidden" name="rates" value="${currencyId.rates}"/>${currencyId.rates}</td>
-            </tr>
-            <tr>
-                <td><label>Exchange amount</label></td>
-                <td><input type="number" name="amount" value="${currencyId.amount}"/>${currencyId.amount}</td>
-            </tr>
-            <tr>
-                <td><label></label></td>
-                <td><input type="submit" value="Exchange"/></td>
-            </tr>
-<%--        </c:forEach>--%>
+        <tr>
+            <td><label>Currency</label></td>
+            <td><input type="hidden" name="currency" value="${currencyId.currency}"/>${currencyId.currency}</td>
+        </tr>
+        <tr>
+            <td><label>Rates</label></td>
+            <td><input type="hidden" name="rates" value="${currencyId.rates}"/>${currencyId.rates}</td>
+        </tr>
+        <tr>
+            <td><label>Exchange amount</label></td>
+            <td><input type="number" name="amount" value="${currencyId.amount}"/>${currencyId.amount}</td>
+        </tr>
+        <tr>
+            <td><label></label></td>
+            <td><input type="submit" value="Exchange"/></td>
+        </tr>
         </tbody>
     </table>
 </form>
