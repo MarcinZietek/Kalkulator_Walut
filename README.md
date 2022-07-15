@@ -8,4 +8,5 @@ IntelliJ Idea
 
 How to use:
 Download source code, unzip, instal Tomcat 9 and run a server. On browser choose your localhost.
+In KalkulatorDao set path for currency.xml file. I used absolute path.
 
